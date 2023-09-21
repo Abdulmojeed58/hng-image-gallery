@@ -31,7 +31,7 @@ To start the development server and run the project locally, use the following c
 
 ```shell
 npm run dev
-
+```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
