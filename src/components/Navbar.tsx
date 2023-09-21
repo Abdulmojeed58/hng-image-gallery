@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 import { useSearchContext } from "../context/useSearchContext";
 import { useAuthContext } from "../context/useAuthContext";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const { handleChange } = useSearchContext();
@@ -12,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between bg-[#0000006c] p-[1rem] md:p-[1.5rem] text-white relative">
-      <h2 className="text-[1.4rem] font-bold">Image Gallery</h2>
+      <h2 className="text-[1.2rem] md:text-[1.4rem] font-bold">Image Gallery</h2>
       <div className="hidden md:flex border-[2px] border-[#D1D5DB] rounded-[6px] py-[6px] px-[10px] justify-between items-center w-[525px]">
         <input
           type="search"

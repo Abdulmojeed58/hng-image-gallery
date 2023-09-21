@@ -89,8 +89,14 @@ const Home = () => {
     <ProtectedRoute user={currentUser}>
       <section>
         <Navbar />
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-          {allAlbums}
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 p-4">
+          {albums.length === 0 ? (
+            <p className="text-black font-bold text-center text-[1.3rem]">
+              Loading...
+            </p>
+          ) : (
+            allAlbums
+          )}
         </div>
       </section>
     </ProtectedRoute>
